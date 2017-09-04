@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <h3 class="text-center">Top Titles</h3>
+
+  <div class="row">
+    <div class="col-12 col-sm-4 col-md-3 col-lg-2 px-3 py-3" *ngFor="let movie of topMovies">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="../../assets/got.jpg" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">{{movie.title}}</a>
+          </h4>
+          <p class="card-text">{{movie.overview | truncate:50}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
